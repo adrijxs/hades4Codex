@@ -1,0 +1,18 @@
+{
+  "version": "2.0",
+  "run_id": "",
+  "profile": "balanced",
+  "goal": "",
+  "status": "pending",
+  "success_criteria": [],
+  "constraints": [],
+  "architecture": {
+    "relevant_components": []
+  },
+  "important_files": [],
+  "confirmed_facts": [],
+  "failed_approaches": [],
+  "open_issues": [],
+  "current_test_state": "not_run",
+  "tasks": []
+}

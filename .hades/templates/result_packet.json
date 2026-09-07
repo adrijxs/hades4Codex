@@ -1,0 +1,14 @@
+{
+  "status": "blocked",
+  "result": "",
+  "changes": [],
+  "tests": [
+    {
+      "command": "",
+      "outcome": "not_run",
+      "evidence": ""
+    }
+  ],
+  "issues": [],
+  "confidence": "low"
+}
