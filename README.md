@@ -1,4 +1,4 @@
-# braincloner_AI - HADES 2.0 fuer Codex
+#HADES 2.0 fuer Codex
 
 HADES ergaenzt Codex um kostenbewusste Delegation: Tools vor Modellen,
 Luna fuer schmale Aufgaben, Sol fuer Implementierung, Astra fuer Planung
