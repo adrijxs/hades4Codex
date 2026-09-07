@@ -1,0 +1,6 @@
+interface:
+  display_name: "HADES 2.0"
+  short_description: "Kostenbewusste Delegation direkt in Codex"
+  default_prompt: "Nutze $hades im BALANCED-Profil, um die Aufgabe vollstaendig umzusetzen und zu pruefen."
+policy:
+  allow_implicit_invocation: true

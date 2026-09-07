@@ -1,0 +1,12 @@
+{
+  "task_id": "",
+  "objective": "",
+  "context": [],
+  "files": [],
+  "constraints": [],
+  "success": [],
+  "depth": 1,
+  "output_budget_tokens": 1500,
+  "result_path": "",
+  "failure": null
+}

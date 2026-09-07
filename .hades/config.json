@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "default_profile": "balanced",
+  "routing": {
+    "prefer_tools": true,
+    "escalation": ["luna", "sol", "astra"],
+    "expected_cost_routing": true
+  },
+  "delegation": {
+    "max_depth": 2,
+    "min_expected_saving": 0.25,
+    "sol_soft_max": 3,
+    "luna_soft_max": 6
+  },
+  "retry": {
+    "same_tier_corrected_retries": 1
+  },
+  "context": {
+    "progressive_expansion": true,
+    "prefer_references": true,
+    "full_history_to_children": false,
+    "pass_parent_reasoning": false
+  },
+  "verification": {
+    "low": "execution plus deterministic check",
+    "medium": "execution plus targeted tests",
+    "high": "tests plus Sol review",
+    "critical": "tests plus Sol or Astra verification"
+  },
+  "profiles": {
+    "eco": {
+      "initial_tier": {"D0": "tool", "D1": "luna", "D2": "sol", "D3": "sol", "D4": "astra"},
+      "delegation": "Prefer narrow Luna tasks when quality and total overhead justify them; no redundant reviews below the risk floor.",
+      "output_budget_tokens": {"luna": 1200, "sol": 4000, "astra": 6000}
+    },
+    "balanced": {
+      "initial_tier": {"D0": "tool", "D1": "luna", "D2": "sol", "D3": "sol", "D4": "astra"},
+      "delegation": "Use the cheapest reliable tier; prefer direct execution when handoff savings are unclear.",
+      "output_budget_tokens": {"luna": 1500, "sol": 6000, "astra": 8000}
+    },
+    "max": {
+      "initial_tier": {"D0": "tool", "D1": "sol", "D2": "sol", "D3": "sol", "D4": "astra"},
+      "delegation": "Favor Sol for model work; use Luna only for clearly mechanical slices and Astra for critical verification.",
+      "output_budget_tokens": {"luna": 1500, "sol": 8000, "astra": 12000}
+    }
+  }
+}

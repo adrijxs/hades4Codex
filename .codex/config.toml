@@ -1,0 +1,10 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+# Keep the user's main-chat model, sandbox, and approval settings.
+forced_login_method = "chatgpt"
+
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 9
+# Codex V2 ignores this key; the role instructions also constrain depth.
+max_depth = 2
